@@ -1,0 +1,13 @@
+#content-image {
+    width: 500;
+    height: 250; /* Mantiene la proporción de la imagen */
+    max-height: 40Svh; /* Ajusta la altura máxima según tus necesidades */
+    object-fit: fill;
+}
+h1{
+    color: blueviolet;
+    text-align: center;
+}
+p{
+    text-indent: 10%;
+}
