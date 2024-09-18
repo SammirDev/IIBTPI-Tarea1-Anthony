@@ -5,9 +5,13 @@
     object-fit: fill;
 }
 h1{
-    color: blueviolet;
+    color: White    ;
     text-align: center;
 }
 p{
+    color: white;
     text-indent: 10%;
+}
+.body{
+    object-position: center;
 }

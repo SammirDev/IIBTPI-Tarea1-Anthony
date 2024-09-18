@@ -9,63 +9,65 @@
     
 </head>
 <body>
-
-    <button class="btn btn-success mx-3 mt-3" data-bs-toggle="offcanvas" data-bs-target="#intro">MENU</button>
+    <header style="background-color: rgb(39, 39, 144) ">
+        <button class=" btn btn-success mx-3 mt-3" data-bs-toggle="offcanvas" data-bs-target="#intro">MENU</button>
+    </header>
     
-    <div class="offcanvas offcanvas-start" id="intro">
+    <body style="background-color: rgb(67, 136, 255); ;">
+        <div class="offcanvas offcanvas-start" id="intro">
         
-        <div class="offcanvas-header">
-            <div class="offcanvas-title">
-                <button class="input-group btn btn-danger" data-bs-dismiss="offcanvas">SALIR</button>
+            <div class="offcanvas-header" style=" background-color: rgb(67, 136, 255);">
+                <div class="offcanvas-title">
+                    <button class="input-group btn btn-danger" data-bs-dismiss="offcanvas">SALIR</button>
+                </div>
+            </div>
+            <div class="offcanvas-body" style=" background-color: rgb(39, 39, 144);">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Buscar..." aria-label="Buscar" aria-describedby="button-search">
+                    <button class="btn btn-outline-secondary" type="button" id="button-search">Buscar</button>
+                </div>
+        
+                <button class="input-group btn btn-primary" onclick="loadContent('img/google.webp')">GOOGLE</button>
+                <hr>
+                <button class="input-group btn btn-primary" onclick="loadContent('img/youtube.webp')">YOUTUBE</button>
+                <hr>
+                <button class="input-group btn btn-primary" onclick="loadContent('img/NETFLIX.webp')">NETFLIX</button>
+                <hr>
+                <button class="input-group btn btn-primary" onclick="loadContent('img/facebook.svg')">FACEBOOK</button>
+                <hr>
+                <button class="input-group btn btn-primary" onclick="loadContent('img/instagram.jpg')">INSTAGRAM</button>
+                <hr>
+                <button class="input-group btn btn-primary" onclick="loadContent('img/snapchat.jpg')">SNAPCHAT</button>
+                <hr>
+                <button class="input-group btn btn-primary" onclick="clearContent()">CLEAR</button>
             </div>
         </div>
-        <div class="offcanvas-body">
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Buscar..." aria-label="Buscar" aria-describedby="button-search">
-                <button class="btn btn-outline-secondary" type="button" id="button-search">Buscar</button>
-            </div>
-            
-            <button class="input-group btn btn-primary" onclick="loadContent('img/google.webp')">GOOGLE</button>
-            <hr>
-            <button class="input-group btn btn-primary" onclick="loadContent('img/youtube.webp')">YOUTUBE</button>
-            <hr>
-            <button class="input-group btn btn-primary" onclick="loadContent('img/NETFLIX.webp')">NETFLIX</button>
-            <hr>
-            <button class="input-group btn btn-primary" onclick="loadContent('img/facebook.svg')">FACEBOOK</button>
-            <hr>
-            <button class="input-group btn btn-primary" onclick="loadContent('img/instagram.jpg')">INSTAGRAM</button>
-            <hr>
-            <button class="input-group btn btn-primary" onclick="loadContent('img/snapchat.jpg')">SNAPCHAT</button>
-            <hr>
-            <button class="input-group btn btn-primary" onclick="clearContent()">CLEAR</button>
+        <div class="body">
+            <h1> SIDEBAR BOOSTRAP</h1>
+            <br>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde optio est quos totam adipisci praesentium nemo
+                quaerat, corrupti recusandae sit tempora consequatur eligendi. Quas voluptatum minus rerum! Fugiat, perspiciatis dolore.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde optio est quos totam adipisci praesentium nemo
+                quaerat, corrupti recusandae sit tempora consequatur eligendi. Quas voluptatum minus rerum! Fugiat, perspiciatis dolore.
+            </p>
         </div>
-    </div>
-
-    <div class="body"> 
-        <h1> SIDEBAR BOOSTRAP</h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde optio est quos totam adipisci praesentium nemo
-            quaerat, corrupti recusandae sit tempora consequatur eligendi. Quas voluptatum minus rerum! Fugiat, perspiciatis dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde optio est quos totam adipisci praesentium nemo
-            quaerat, corrupti recusandae sit tempora consequatur eligendi. Quas voluptatum minus rerum! Fugiat, perspiciatis dolore.
-        </p>
-    </div>
-    <!-- Contenedor para la imagen en el cuerpo del documento -->
-    <div  class="container mt-3 text-center">
-        <img id="content-image" src="">
-    </div>
-
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script>
-        function loadContent(imageUrl) {
-            document.getElementById('content-image').src = imageUrl;
-        }
-        function clearContent(imageUrl) {
-            document.getElementById('content-image').src = "";
-        }
-    </script>
+        <!-- Contenedor para la imagen en el cuerpo del documento -->
+        <div  class="container mt-3 text-center">
+            <img id="content-image" src="">
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script>
+            function loadContent(imageUrl) {
+                document.getElementById('content-image').src = imageUrl;
+            }
+            function clearContent(imageUrl) {
+                document.getElementById('content-image').src = "";
+            }
+        </script>
+    </body>
 </body>
 </html>
